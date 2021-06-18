@@ -1,0 +1,81 @@
+<style>
+    .unit {
+        position: relative;
+        width: 500px;
+        height: 500px;
+    }
+    .unit img {
+        position: absolute;
+        width: 100%;
+    }
+    .unit div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: overlay;
+        -webkit-mask-size: 100% 100%;
+    }
+
+    .hair-0 {
+        background-image: linear-gradient(#58b156, #ff5e5e);
+        -webkit-mask-image: url(./dist/images/talents/anya-hair-0.webp);
+    }
+    .hair-1 {
+        background-image: linear-gradient(#ff5e5e, #58b156);
+        -webkit-mask-image: url(./dist/images/talents/anya-hair-1.webp);
+    }
+
+    .body-0 {
+        background-color: #58b156;
+        -webkit-mask-image: url(./dist/images/talents/anya-body-0.webp);
+    }
+    .body-1 {
+        background-color: #ff5e5e;
+        -webkit-mask-image: url(./dist/images/talents/anya-body-1.webp);
+    }
+
+    img.eye {
+        width: 15%;
+        top: 37%;
+    }
+    .ileft {
+        left: 30%;
+    }
+    .iright {
+        right: 30%;
+        transform: scaleX(-1);
+    }
+
+    img.nose {
+        width: 1%;
+        left: 49.5%;
+        top: 49%;
+        mix-blend-mode: difference;
+    }
+    img.mouth {
+        width: 19%;
+        left: 40%;
+        top: 50%;
+        mix-blend-mode: difference;
+    }
+</style>
+
+<div class="unit">
+    <img src="./dist/images/talents/anya-base.webp">
+
+    <img src="./dist/images/talents/anya-hair-0.webp">
+    <div class="hair-0"></div>
+    <img src="./dist/images/talents/anya-hair-1.webp">
+    <div class="hair-1"></div>
+
+    <img src="./dist/images/talents/anya-body-0.webp">
+    <div class="body-0"></div>
+    <img src="./dist/images/talents/anya-body-1.webp">
+    <div class="body-1"></div>
+
+    <img class="eye ileft" src="./dist/images/talents/anya-eye-left.webp">
+    <img class="eye iright" src="./dist/images/talents/anya-eye-left.webp">
+
+    <img class="nose" src="./dist/images/talents/anya-nose.webp">
+    <img class="mouth" src="./dist/images/talents/anya-mouth-blend.webp">
+</div>
