@@ -1,16 +1,19 @@
 {
-  "name": "hololive-fusion-generator",
+  "name": "hololive-palette-editor",
   "version": "0.0.0",
-  "description": "",
+  "description": "A palette editor for hololive sprites.",
   "main": "",
   "scripts": {
     "test": "jest --verbose",
     "build": "webpack --config ./webpack.prod.js",
     "build:dev": "webpack --config ./webpack.dev.js",
-    "dev": "webpack serve --config ./webpack.dev.js --host 0.0.0.0"
+    "dev": "webpack serve --config ./webpack.dev.js --host 0.0.0.0",
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -d build"
   },
+  "homepage": "http://yuribenjamin.github.io/my-app",
   "keywords": [],
-  "author": "vaexenc",
+  "author": "Krazete",
   "license": "",
   "private": true,
   "dependencies": {
@@ -27,6 +30,7 @@
   "devDependencies": {
     "eslint": "^7.22.0",
     "eslint-plugin-jest": "^24.3.2",
+    "gh-pages": "^3.2.2",
     "jest": "^26.6.3",
     "webpack-dev-server": "^3.11.2"
   }
