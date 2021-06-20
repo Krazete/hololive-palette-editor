@@ -8,8 +8,8 @@
     "build": "webpack --config ./webpack.prod.js",
     "build:dev": "webpack --config ./webpack.dev.js",
     "dev": "webpack serve --config ./webpack.dev.js --host 0.0.0.0",
-	"predeploy": "npm run build",
-	"deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+  	"deploy": "gh-pages -d dist"
   },
   "homepage": "http://yuribenjamin.github.io/my-app",
   "keywords": [],
