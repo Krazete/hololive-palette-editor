@@ -34,6 +34,7 @@ module.exports = {
 	plugins: [
 		new CleanWebpackPlugin({cleanOnceBeforeBuildPatterns: ["**/*", "!images/**", "!favicon.ico"]}),
 		new HtmlWebpackPlugin({template: "./src/index.html"}),
+		new HtmlWebpackPlugin({template: "./src/anya-test.html", filename: "anya-test.html"}),
 		new MiniCssExtractPlugin({filename: "style-[contenthash].css"})
 	],
 	devServer: {
